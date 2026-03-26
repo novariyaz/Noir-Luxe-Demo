@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir Luxe | Premium Artisan Chocolate</title>
+    <meta name="description" content="Discover the exquisite taste of Noir Luxe premium artisan chocolate. Handcrafted with passion and the finest ingredients.">
+    
+    <!-- OpenGraph & Twitter SEO Meta Tags -->
+    <meta property="og:title" content="Noir Luxe | Premium Artisan Chocolate">
+    <meta property="og:description" content="Indulge in the extraordinary. Handcrafted, single-origin chocolate creations.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://noirluxe.company.com/assets/collection.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Preloads & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <h1 class="logo">Noir <span class="logo-accent">Luxe</span></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about" class="nav-link">Our Craft</a></li>
+                    <li><a href="#collections" class="nav-link">Collections</a></li>
+                    <li><a href="#testimonials" class="nav-link">Legacy</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions" style="display: flex; gap: 16px; align-items: center;">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="btn-icon theme-toggle" aria-label="Toggle light and dark theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41.39.39 1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41.39.39 1.03.39 1.41 0l1.06-1.06z"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                </button>
+                <a href="#contact" class="btn btn-primary nav-cta">Purchase</a>
+                <!-- Mobile Hamburger Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#about" class="mobile-link">Our Craft</a></li>
+                <li><a href="#collections" class="mobile-link">Collections</a></li>
+                <li><a href="#testimonials" class="mobile-link">Legacy</a></li>
+                <li><a href="#contact" class="mobile-link highlight">Access Waitlist</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Dynamic Hero Section with Image Sequence -->
+        <section class="hero scroll-sequence" id="hero-sequence">
+            <div class="sticky-container">
+                <canvas id="hero-canvas"></canvas>
+                <noscript>
+                    <img src="/hero/heroanimations/Chocolate_unwrapping_exploding_202603261317_079.webp" alt="Noir Luxe Chocolate unwrapping" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; z-index:0;">
+                </noscript>
+                <div class="hero-overlay"></div>
+                <div class="container hero-container">
+                    <div class="hero-content reveal-item" id="hero-text" data-delay="0.2">
+                        <p class="hero-kicker">Est. 2026</p>
+                        <h2 class="hero-headline">Decadence <br>in Every Detail.</h2>
+                        <p class="hero-subheadline">Experience the pinnacle of artisan chocolate, meticulously crafted for the most discerning palates.</p>
+                        <div class="hero-actions">
+                            <a href="#collections" class="btn btn-primary btn-lg shine-effect">Discover the Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Asymmetrical Features Section -->
+        <section id="about" class="features section">
+            <div class="container">
+                <div class="feature-split reveal">
+                    <div class="feature-text reveal-item" data-delay="0.1">
+                        <h2 class="section-title">The Art of<br>Craftsmanship</h2>
+                        <p class="section-subtitle">We believe true luxury is born from passion, patience, and uncompromising quality. Our master chocolatiers oversee every step of the journey, from bean to the final gold-dusted truffle.</p>
+                        
+                        <div class="feature-list">
+                            <div class="list-item reveal-item" data-delay="0.3">
+                                <span class="list-icon"></span>
+                                <div>
+                                    <h4>Finest Cacao</h4>
+                                    <p>Ethically sourced, single-origin cacao beans selected for their complex flavor profiles.</p>
+                                </div>
+                            </div>
+                            <div class="list-item reveal-item" data-delay="0.4">
+                                <span class="list-icon"></span>
+                                <div>
+                                    <h4>Handcrafted Precision</h4>
+                                    <p>Each piece is meticulously shaped and tempered to achieve the perfect snap and melt.</p>
+                                </div>
+                            </div>
+                            <div class="list-item reveal-item" data-delay="0.5">
+                                <span class="list-icon"></span>
+                                <div>
+                                    <h4>Artisan Flavors</h4>
+                                    <p>Unexpected culinary pairings and timeless classic combinations to boldly awaken the senses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-image parallax reveal-item" data-delay="0.2" data-speed="0.1">
+                        <div class="image-wrapper glassmorphism">
+                            <img src="assets/craft.png" alt="Chocolatier crafting chocolate">
+                            <div class="image-accent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections / Product Showcase -->
+        <section id="collections" class="collection-showcase section reveal">
+            <div class="container">
+                <div class="collection-split reverse">
+                    <div class="feature-text reveal-item" data-delay="0.1">
+                        <h2 class="section-title">The Signature<br>Collection</h2>
+                        <p class="section-subtitle">An elegant, matte black luxury box opening to reveal our most prized creations. Unexpected pairings and classic combinations that awaken the senses.</p>
+                        <a href="#contact" class="btn btn-outline">Explore More</a>
+                    </div>
+                    <div class="feature-image parallax reveal-item" data-delay="0.2" data-speed="0.1">
+                        <div class="image-wrapper shadow-lg">
+                            <img src="assets/collection.png" alt="Signature Chocolate Collection Box">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Testimonials Section -->
+        <section id="testimonials" class="testimonials section reveal">
+            <div class="container">
+                <div class="section-header reveal-item" data-delay="0.1">
+                    <h2 class="section-title">A Taste of Perfection</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-card reveal-item" data-delay="0.2">
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">Noir Luxe redefines chocolate. The depth of flavor is unparalleled, and the texture is simply divine. A true masterclass in confectionary art.</p>
+                        <footer class="testimonial-author">&mdash; Elena M. <span class="author-title">Culinary Critic</span></footer>
+                    </div>
+                    <div class="testimonial-card glass-card reveal-item" data-delay="0.3">
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">Every bite feels like an occasion. The gold-dusted truffles are the perfect gift, though I inevitably keep them for myself.</p>
+                        <footer class="testimonial-author">&mdash; Julian R. <span class="author-title">Connoisseur</span></footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Immersive Final CTA -->
+        <section id="contact" class="cta section reveal">
+            <div class="container">
+                <div class="cta-card glass-card reveal-item" data-delay="0.1">
+                    <h2 class="cta-headline">Indulge in the Extraordinary</h2>
+                    <p class="cta-text">Join our exclusive inner circle to access limited-edition releases, private tasting events, and priority reservations.</p>
+                    <form id="waitlist-form" action="https://formspree.io/f/placeholder" method="POST" class="cta-form reveal-item" data-delay="0.2">
+                        <div class="input-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" name="email" id="email" class="input" placeholder="Enter your email address" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary shine-effect">Request Access</button>
+                    </form>
+                    <div id="form-success" class="form-success-message" style="display: none;">
+                        <p>Thank you. Your access has been requested.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">Noir <span class="logo-accent">Luxe</span></h2>
+                    <p class="footer-tagline">Premium Artisan Chocolate</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-col">
+                        <h4>Explore</h4>
+                        <a href="#about">Craft</a>
+                        <a href="#collections">Collections</a>
+                        <a href="#testimonials">Legacy</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Noir Luxe. Crafted with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
